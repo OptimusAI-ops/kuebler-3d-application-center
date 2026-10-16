@@ -1,5 +1,9 @@
 # Kübler 3D Application Center
 
+**[Open the live 3D demonstration](https://optimusai-ops.github.io/kuebler-3d-application-center/)**
+
+The `gh-pages` branch serves the existing production snapshot with GitHub Pages asset paths. The local application and its source behavior are preserved.
+
 A browser-only React / TypeScript industrial education platform built with Vite, Three.js, React Three Fiber, Drei, Tailwind CSS, and Lucide icons. No backend, API keys, paid assets or runtime AI calls.
 
 ## Run locally
