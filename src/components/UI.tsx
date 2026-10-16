@@ -1,0 +1,7 @@
+import type { ButtonHTMLAttributes, ReactNode } from 'react'
+import { ArrowUpRight, Box } from 'lucide-react'
+export function Brand() { return <a className="brand" href="#/" aria-label="Kübler Application Center home">KÜBLER<span className="brand-square"/></a> }
+export function Header({ application = false }: { application?: boolean }) { return <header className="site-header"><div className="header-left"><Brand/><span className="header-rule"/><span className="header-label">APPLICATION CENTER</span></div><nav aria-label="Main navigation"><a className={!application ? 'nav-active' : ''} href="#/">Applications</a><a href="#/about">About the platform <ArrowUpRight size={13}/></a></nav><span className="header-edition"><Box size={15}/> INTERACTIVE 3D EXPERIENCE</span></header> }
+export function Button({ children, className = '', ...props }: ButtonHTMLAttributes<HTMLButtonElement>) { return <button className={`button ${className}`} {...props}>{children}</button> }
+export function Eyebrow({ children }: { children: ReactNode }) { return <div className="eyebrow"><span/>{children}</div> }
+export function Footer() { return <footer className="site-footer"><span>© {new Date().getFullYear()} Kübler Application Center <span className="footer-sep">/</span> Interactive application studies</span><span>PRECISION. IN EVERY MOVEMENT.</span><a href="#/about">About this experience <ArrowUpRight size={12}/></a></footer> }
